@@ -1,7 +1,7 @@
 import socket
 import threading
 
-part = {} #{address: id} # so that when a peer rejoins we can regain the chunks
+part = {} #{address: id} # enables to regain the chunks when a peer rejoins the connection
 peer_data = {}
 
 def get_id(addr)->int:
