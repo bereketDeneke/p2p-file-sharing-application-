@@ -7,7 +7,6 @@ peer_data = {}
 def get_id(addr)->int:
     if addr not in part:
         part[addr] = max(list(peer_data.keys()) + [0]) + 1
-        return part[addr]
     return part[addr]
 
 def handle_peer(conn, addr):
